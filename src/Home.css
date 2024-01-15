@@ -1,0 +1,30 @@
+.home-main {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto auto 1fr;
+    align-items: start;
+    gap: 1rem;
+
+    padding: 0.5rem;
+}
+
+.home-main__search {
+    grid-column: span 12;
+}
+
+.home-main__name-span {
+    grid-column: span 12;
+
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.home-main__card {
+    grid-column: span 12;
+}
+
+@media(min-width: 40rem) {
+    .home-main__card {
+        grid-column: span 4;
+    }
+}

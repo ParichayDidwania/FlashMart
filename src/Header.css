@@ -1,0 +1,30 @@
+.header {
+    display: flex;
+    flex-direction: row;
+
+    background-color: var(--header-bg-color);
+    color: var(--header-color);
+}
+
+.header__heading {
+    flex-grow: 1;
+
+    padding: 1rem;
+
+    text-align: center;
+}
+
+.header__nav {
+    margin: 1rem;
+    margin-top: 0.75rem;
+}
+
+@media(min-width: 40rem) {
+    .header {
+        flex-direction: column;
+    }
+
+    .header__nav {
+        margin: 0rem;
+    }
+}

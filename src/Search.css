@@ -1,0 +1,60 @@
+.search-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.search-bar__label {
+    margin-right: 0.5rem;
+}
+
+.search-bar__input {
+    border: none;
+    padding-left: 1rem;
+    width: 75%;
+
+    background-color: var(--search-input-bg-color);
+}
+
+.search-bar__submit-button {
+    border: none;
+    padding: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    background-color: var(--search-btn-bg-color);
+    color: var(--search-btn-color);
+
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/*below CSS adapted from https://css.gg under the MIT License*/
+.search-bar__gg-search {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(var(--ggs,1));
+    width: 16px;
+    height: 16px;
+    border: 2px solid;
+    border-radius: 100%;
+    margin-left: -4px;
+    margin-top: -4px
+}
+   
+.search-bar__gg-search::after {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    border-radius: 3px;
+    width: 2px;
+    height: 8px;
+    background: currentColor;
+    transform: rotate(-45deg);
+    top: 10px;
+    left: 12px
+} 
+/*above CSS adapted from https://css.gg under the MIT License*/

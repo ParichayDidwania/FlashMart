@@ -1,0 +1,54 @@
+.settings-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+    padding: 0.5rem;
+}
+
+
+.settings-main__edit-username-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+
+    translate: -50% -50%
+}
+
+.settings-main__edit-username-modal::backdrop {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.theme-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    padding: 1rem;
+    background-color: var(--general-form-bg-color);
+}
+
+.theme-form__error-span {
+    color: red;
+
+    font-style: italic;
+}
+
+.theme-form__label {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+}
+
+.theme-form__submit-button, .settings-main__edit-username-button {
+    border: none;
+
+    background-color: var(--general-btn-bg-color);
+    color: var(--general-btn-color);
+}
+
+.theme-form__submit-button:hover, .settings-main__edit-username-button:hover {
+    background-color: var(--general-btn-bg-color-hover);
+}

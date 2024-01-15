@@ -1,0 +1,127 @@
+.page {
+    display: grid;
+    grid-template-areas: 
+        "header"
+        "main"
+        "footer";
+    grid-template-rows: auto 1fr auto;
+
+    min-height: 100%;
+
+    background-color: var(--page-bg-color);
+    color: var(--page-color);
+}
+
+.page--light-theme {
+    --page-bg-color: white;
+    --page-color: black;
+
+    --general-btn-bg-color: #195851;
+    --general-btn-bg-color-hover: #359a8e;
+    --general-btn-color: white;
+    --general-form-bg-color: #dedede;
+
+    --header-bg-color: #00453e;
+    --header-color: white;
+
+    --nav-hamburger-color: white;
+    --nav-link-color: white;
+    --nav-link-bg-color: #195851;
+    --nav-border-color: white;
+    --nav-link-bg-color-expanded: #195851;
+    --nav-link-bg-color-hover: #359a8e;
+
+    --search-btn-bg-color: #195851;
+    --search-btn-color: white;
+    --search-input-bg-color:#dedede;
+
+    --card-bg-color: #dedede;
+    --card-price-color: black;
+
+    --result-toolbar-bg-color: #dedede;
+    --result-toolbar-btn-bg-color: #017063;
+    --result-toolbar-btn-color: white;
+    --result-toolbar-sort-btn-bg-color: #359a8e;
+
+    --panel-bg-color: #dedede;
+
+    --cart-border-color: white;
+
+    --settings-modal-color: black;
+
+    --security-answer-bg-color: white;
+
+    --footer-bg-color: #00453e;
+    --footer-color: white;
+    --footer-page-bg-color: #dedede;
+}
+
+.page--dark-theme {
+    --page-bg-color: #3f3f3f;
+    --page-color: white;
+
+    --general-btn-bg-color: #7a5af5;
+    --general-btn-bg-color-hover: #9b83f8;
+    --general-btn-color: white;
+    --general-form-bg-color: #121212;
+
+    --header-bg-color: #282828;
+    --header-color: #7a5af5;
+
+    --nav-hamburger-color: #7a5af5;
+    --nav-link-color: white;
+    --nav-link-bg-color: #282828;
+    --nav-border-color: white;
+    --nav-link-bg-color-expanded: #575757;
+    --nav-link-bg-color-hover: #7a5af5;
+
+    --search-btn-bg-color: #ba9ffb;
+    --search-btn-color: white;
+    --search-input-bg-color:white;
+
+    --card-bg-color: #121212;
+    --card-price-color: #DEDEDE;
+
+    --result-toolbar-bg-color: #282828;
+    --result-toolbar-btn-bg-color: #121212;
+    --result-toolbar-btn-color: white;
+    --result-toolbar-sort-btn-bg-color: #9171f8;
+
+    --panel-bg-color: #121212;
+
+    --cart-border-color: white;
+
+    --settings-modal-color: white;
+
+    --security-answer-bg-color: #282828;
+
+    --footer-bg-color: #282828;
+    --footer-color: #7a5af5;
+    --footer-page-bg-color: #121212;
+}
+
+.page__skiplink {
+    position: absolute;
+    top: 0;
+    left: 50%;
+
+    font-size: 1rem;
+
+    translate: -50% -100%;
+}
+
+.page__skiplink:focus {
+    translate: -50% 0%;
+}
+
+.page__header {
+    grid-area: header;
+}
+
+.page__main {
+    grid-area: main;
+}
+
+.page__footer {
+    grid-area: footer;
+}

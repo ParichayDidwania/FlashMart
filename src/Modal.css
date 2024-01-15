@@ -1,0 +1,55 @@
+.modal {
+    border-radius: 10px;
+    border-color: white;
+    padding: 0;
+}
+
+.name-form {
+    display: flex;
+    flex-direction: column;
+
+    padding: 2rem;
+
+    background-color: var(--general-form-bg-color);
+}
+
+.name-form__heading {
+    margin-bottom: 1rem;
+
+    color: var(--settings-modal-color);
+
+    text-align: center;
+}
+
+.name-form__error-span {
+    color: red;
+
+    font-style: italic;
+}
+
+.name-form__label {
+    margin-bottom: 0.25rem;
+
+    color: var(--settings-modal-color);
+}
+
+.name-form__buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    margin-top: 1rem;
+}
+
+.name-form__submit-button {
+    border: none;
+
+    background-color: var(--general-btn-bg-color);
+    color: var(--general-btn-color);
+}
+
+.name-form__close-button {
+    border: none;
+
+    background-color: coral;
+}

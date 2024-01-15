@@ -1,0 +1,105 @@
+.checkout-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.address-form {
+    display: flex;
+    flex-direction: column;
+
+    margin: 1rem;
+    padding: 1rem;
+
+    background-color: var(--general-form-bg-color);
+}
+
+.address-form__heading {
+    align-self: center;
+
+    margin-bottom: 1rem;
+}
+
+.address-form__info {
+    align-self: center;
+
+    margin-bottom: 1rem;
+}
+
+.address-form--required {
+    color: red;
+}
+
+.address-form__input-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.address-form__shipping-content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+.address-form__subheading {
+    margin-bottom: 1rem;
+}
+
+.address-form__label {
+    margin-bottom: 0.25rem;
+}
+
+.address-form__error-span {
+    color: red;
+}
+
+.address-form__input {
+    margin-bottom: 0.75rem;
+}
+
+.address-form__label-checkbox {
+    align-self: center;
+
+    margin-bottom: 1rem;
+}
+
+.address-form__input-checkbox {
+    margin-right: 0.5rem;
+}
+
+.address-form__billing-content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+.address-form__input-readonly {
+    background-color: lightgray;
+}
+
+.address-form__submit-button {
+    margin-top: 1rem;
+    border: none;
+
+    color: var(--general-btn-color);
+    background-color: var(--general-btn-bg-color);
+}
+
+.address-form__submit-button:hover {
+    background-color: var(--general-btn-bg-color-hover);
+}
+
+.checkout-main__order-span {
+    margin-top: 1rem;
+
+    font-size: 1.2rem;
+}
+
+@media(min-width: 40rem) {
+    .address-form__input-content {
+        flex-direction: row;
+        gap: 5rem;
+    }
+}

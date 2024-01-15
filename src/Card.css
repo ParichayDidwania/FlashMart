@@ -1,0 +1,22 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    background-color: var(--card-bg-color);
+}
+
+.card__image {
+    width: 100%;
+    aspect-ratio: 1/1;
+}
+
+.card__heading {
+    text-align: center;
+}
+
+.card__price {
+    color: var(--card-price-color);
+
+    text-align: center;
+}
